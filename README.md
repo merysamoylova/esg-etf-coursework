@@ -31,7 +31,6 @@ The FRED variables used in the dataset are:
 ## Files in this repository
 
 ### Data files
-### Data files
 
 1. `esg_dataset.csv` - raw merged panel dataset before additional cleaning in the notebook.
 2. `esg_dataset_cleaned.csv` - cleaned dataset used for the empirical analysis in the notebook.
@@ -77,7 +76,9 @@ However, the final dataset `esg_dataset.csv` is already included in the reposito
 
 ## Colab notebook
 
-To run the notebook, place ESG_ETF_coursework.ipynb and esg_dataset.csv in the same folder, install the required packages from requirements.txt, and run the notebook cells sequentially.
+The notebook `ESG_ETF_coursework.ipynb` uses `esg_dataset.csv` as the input file. It performs the cleaning procedure, saves the cleaned dataset as `esg_dataset_cleaned.csv`, and then uses the cleaned data for the empirical analysis.
+
+To run the notebook, place `ESG_ETF_coursework.ipynb` and `esg_dataset.csv` in the same folder, install the required packages from `requirements.txt`, and run the notebook cells sequentially.
 
 ## Required packages
 
