@@ -8,20 +8,11 @@ The purpose of this repository is to show how the initial dataset was collected 
 
 ## Dataset
 
-The main dataset is:
+The repository includes two dataset files:
 
-`esg_dataset.csv`
+1. `esg_dataset.csv` - the initial raw merged panel dataset created by merging ETF price data, VIX data, and macroeconomic variables. This dataset is used as the input file for the Colab notebook.
 
-It contains the initial merged panel dataset before additional cleaning in Google Colab.
-
-The dataset has:
-
-- 26,104 observations
-- 13 variables
-- 26 ESG-related ETF tickers
-- daily data for 2021-2024
-
-Each row represents one ETF on one trading day together with macroeconomic indicators observed on the same date.
+2. `esg_dataset_cleaned.csv` - the cleaned dataset produced in the Colab notebook after removing columns with excessive missing values and dropping observations with missing values in the main variables. This dataset is used for descriptive statistics, correlation analysis, regression analysis, hypothesis testing, figures, and machine learning models.
 
 ## Data sources
 
@@ -40,11 +31,12 @@ The FRED variables used in the dataset are:
 ## Files in this repository
 
 ### Data files
+### Data files
 
-1. `etf_prices_returns_2021_2024.csv` - ETF prices, daily returns, and volume data.
-2. `macro_daily_extended.csv` - macroeconomic variables from FRED.
-3. `vix_daily.csv` - daily VIX data.
-4. `esg_dataset.csv` - final raw merged dataset used as the input for further cleaning and analysis.
+1. `esg_dataset.csv` - raw merged panel dataset before additional cleaning in the notebook.
+2. `esg_dataset_cleaned.csv` - cleaned dataset used for the empirical analysis in the notebook.
+
+Intermediate CSV files, such as ETF-only price data, macroeconomic data, and VIX data, are not included in the repository because they can be reproduced by running the data collection scripts.
 
 ### Python scripts
 
